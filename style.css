@@ -449,27 +449,27 @@ width: 100%;
 
 @media(max-width:960px){
   #sectiondivp2{
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
   }
   #photocontainerp2,#txtcontainerp2{
-    min-width: 400px;
+    z-index: 1;
   }
 
   #photocontainerp2{
+    width: 80%;
     height: 45vh;
     z-index: 0;
   }
   #txtcontainerp2{
+    width: 80%;
     position:absolute;
     background-color: rgb(227, 241, 243, 0.7);
     top: 300px;
-  }
+    }
 
   #peru,#sydney{
-    min-width: 30vh;
-  }
-  #bienvenidop2{
-    height: 56vh;
+    width: clamp(100px,60vw, 350px);
   }
 }
 
@@ -535,4 +535,76 @@ width: 100%;
   
 #acerphoto img{
   border-radius: 50%;
+  display: flex;
+  width: clamp(50px,40vw, 350px)
 }
+
+
+#section{
+  display: flex;
+  flex-direction: column;
+}
+
+#bottomdiv{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#bottomimg{
+  display: flex;
+  flex-direction: column;
+  width: clamp(50px,30vw, 350px)
+}
+
+#background{
+  width: 50%;
+  background: #E3F1F3;
+  margin-top: 80px;
+}
+
+#bottomtxt{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: justify;
+  padding: 80px;
+}
+
+@media(max-width:960px){
+
+  #acercami{
+    margin-top: 70px;
+  }
+
+  #txtacer{
+    width:50%
+  }
+
+  #background{
+    width: 95%;
+    background: rgb(227, 241, 243, 0.7)
+  }
+  #bottomtxt{
+    padding:20px;
+    
+  }
+
+  #bottomimg{
+    display: none;
+    position: absolute;
+    z-index: -1;
+  }
+
+}
+
+#bottomtxt p{
+  font-size: clamp(0.75rem, 1vw, 2rem);
+}
+
+
+#bottomtxt h2{
+  font-size: clamp(1rem, 3vw, 3rem);
+}
+
+
