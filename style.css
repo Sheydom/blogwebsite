@@ -912,3 +912,43 @@ width: 100%;
   display: flex;
   border: 3px solid white;
 }
+
+
+  /* --------------------------------------------------------------------------------------- */
+                                      /* page 6 */
+
+
+     
+
+   #topp6{
+    position: relative;
+    top: 105px;
+    display: flex;
+    flex:1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid red;
+   }      
+   #imgdivp6{
+    display: flex;
+    position: relative;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }   
+   #txtdivp6{
+    display: flex;
+    max-width: 40%;
+    text-align: justify;
+    flex-direction: column;
+    position: absolute;
+   }
+   
+   #imgdivp6 img{
+    display: flex;
+    max-width: 700px;
+    min-width: 300px;
+   }
