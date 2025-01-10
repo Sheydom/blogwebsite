@@ -24,6 +24,7 @@ body {
   width:100%;
   background: linear-gradient(90deg, white 0% ,#7AC0CC 30%,#7AC0CC 75%, white 100%);
   z-index: 1000;
+  min-height: 105px;
 }
 
 
@@ -355,6 +356,7 @@ width: 100%;
   padding: 10px;
   width: 100%;
   background: linear-gradient(90deg, white 0% ,#7AC0CC 30%,#7AC0CC 75%, white 100%);
+  min-height: 150px;
 }
 
 
@@ -372,7 +374,7 @@ width: 100%;
 }
 
 /* --------------------------------------------------------------------------------------- */
-                                      /* page 2 */
+                                      /* page conoceme */
 
 
 
@@ -616,7 +618,7 @@ width: 100%;
 
 
 /* --------------------------------------------------------------------------------------- */
-                                      /* page 4 */
+                                      /* page blog */
 
     #bodyp4{
       background: rgb(227, 241, 243)!important;
@@ -701,7 +703,7 @@ width: 100%;
 
 
   /* --------------------------------------------------------------------------------------- */
-                                      /* page 5 */
+                                      /* page plan */
 
 #bodyp5{
   background: rgb(227, 241, 243)!important;
@@ -915,40 +917,88 @@ width: 100%;
 
 
   /* --------------------------------------------------------------------------------------- */
-                                      /* page 6 */
+                                      /* page contactme */
 
 
      
 
    #topp6{
-    position: relative;
-    top: 105px;
     display: flex;
-    flex:1;
+    position: relative;
+    height: 85vh;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 3px solid red;
+    flex-wrap: wrap;
    }      
    #imgdivp6{
     display: flex;
+    flex-wrap: wrap;
     position: relative;
-    margin-top: 100px;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
    }   
    #txtdivp6{
     display: flex;
-    max-width: 40%;
     text-align: justify;
     flex-direction: column;
     position: absolute;
+    left: -200px;
+    top: 0;
+    background-color: rgba(153, 213, 221);
+    border-radius: 20px 0 20px 0;
+    width: clamp(50px,30vw, 450px);
    }
    
+   #txtdivp6 h2{
+    padding: 20px;
+    font-size: clamp(1rem, 2vw, 3rem);
+  }
+  
+  #txtdivp6 p {
+    font-size: clamp(0.75rem, 2vw, 1rem);
+    padding: 20px;
+  }
+  
    #imgdivp6 img{
     display: flex;
-    max-width: 700px;
-    min-width: 300px;
+    width: clamp(300px,50vw, 700px);
+    
    }
+
+
+   #form{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    gap: 5px;
+    bottom: 0px;
+    right: 0;
+   }
+
+
+  #form input, textarea{
+    background: rgb(227, 241, 243,0.7)
+  }
+
+
+
+
+  @media(max-width : 960px){
+    #txtdivp6
+    {
+      left: 0;
+      width: 100%;
+      background-color: rgba(153, 213, 221, 0.7);
+      border-radius: 0px;
+  
+    }
+
+    #form{
+      position: relative;
+      background-color: rgb(158, 193, 192);
+      
+    }
+    
+  }
