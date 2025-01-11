@@ -203,6 +203,7 @@ position: relative;
       
     }
     #sheyphoto{
+      width: 70%;
       order:1;
     }
 
@@ -260,7 +261,33 @@ align-items: center;
 width: 100%;
 
 }
+#rockdiv{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+#rock{
+  position: relative;
+  width: 100%;
+  object-fit: cover;
+  height: auto;
+}
 
+
+#test{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 45%;
+  height:100%;
+  position: absolute;
+}
+ 
+  
 
 #s02{
   position: absolute;
@@ -272,32 +299,6 @@ width: 100%;
   top: 0px;
   left: 40px;
 }
-#rockdiv{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  position: relative
-}
-
-#test{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 50%;
-  height:100%;
-  position: absolute;
-}
-
-#rock{
-  position: relative;
-  width: 100vw;
-  max-height: 70vh;
-  height: auto;
-}
-
-
 #textcontainer{
   display: flex;
   position: absolute;
@@ -308,9 +309,22 @@ width: 100%;
   text-align: justify;
   background-color: #E3F1F3;
   border-radius: 25px 0px;
-  top: 10px;
-  right: 10px;
+  top: 0px;
+  right: 0px;
  }
+
+ @media(max-width:960px){
+  #test{
+    width: 70%;
+  }
+  #textcontainer{
+    right: 0;
+  }
+}
+
+
+
+
 
 #textcontainer h2{
   font-size: clamp(1rem, 2vw, 2rem);
@@ -327,7 +341,6 @@ width: 100%;
 
 @media (max-width: 960px) {
   #textcontainer {
-    padding: 10px;;
     top: 0; 
     max-width: 100%; 
     padding: 10px;
@@ -336,10 +349,7 @@ width: 100%;
 
   #rock {
     height: 25vh;
-  }
-  #pleemiblog{
-    margin-bottom: -10px;
-    
+     /* padding-bottom: 20px; */
   }
 }
 
@@ -352,11 +362,11 @@ width: 100%;
 }
 
 #footercontainer{
-  max-height: fit-content;
+  /* max-height: fit-content; */
   padding: 10px;
   width: 100%;
   background: linear-gradient(90deg, white 0% ,#7AC0CC 30%,#7AC0CC 75%, white 100%);
-  min-height: 150px;
+  /* min-height: 150px; */
 }
 
 
@@ -366,8 +376,9 @@ width: 100%;
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
 }
+ 
 
 .footerlinks{
   font-size: clamp(0.75rem, 1vw, 1rem);
@@ -1073,7 +1084,7 @@ width: 100%;
     max-width: 90%;
   }
 
-  #vivir h2,p{
+  #vivir h2 p{
     padding:20px;
   }
 
