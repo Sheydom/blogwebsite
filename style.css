@@ -1008,3 +1008,74 @@ width: 100%;
                                       /* page vivir */
 
 
+
+#vivir{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 105px;
+  background: rgb(227, 241, 243);
+  z-index: -1;
+}
+
+
+.lavidaflex{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 50%;
+  justify-content: space-between;
+  align-items: center;
+  text-align: justify;
+}
+
+#vivir h2{
+  padding: 20px;
+  font-size: clamp(1rem, 2vw, 3rem)
+}
+
+#vivir p{
+  font-size: clamp(0.75rem, 2vw, 1rem);
+  padding: 20px;
+}
+
+#lavidaimg,#lavida2img{
+  display: flex;
+  flex-direction: row;
+}
+
+#lavidaimg img{
+  width: 100%;
+  object-fit:cover;
+  height: 300px;
+}
+
+
+#lavida2img img{
+  width: 100%;
+}
+
+#lavida3img img{
+  width: 100%;
+}
+
+#lavidaimg4 img{
+  width: 100%;
+  margin-bottom: 105px;
+}
+
+
+@media(max-width: 960px){
+  #lavidaimg img{
+    height:200px;
+  }
+  .lavidaflex{
+    max-width: 90%;
+  }
+
+  #vivir h2,p{
+    padding:20px;
+  }
+
+
+}
