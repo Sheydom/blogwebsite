@@ -1021,7 +1021,8 @@ width: 100%;
 
 #vivir h2{
   padding: 20px;
-  font-size: clamp(1rem, 2vw, 3rem)
+  font-size: clamp(1rem, 2vw, 3rem);
+  text-align: center;
 }
 
 #vivir p{
