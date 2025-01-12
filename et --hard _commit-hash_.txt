@@ -1,0 +1,23 @@
+[33mcommit 3ca8b1b82a1038a481a1448c97b6c4588b2df09f[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Dom <dominic.knabe@gmail.com>
+Date:   Sat Jan 11 22:25:11 2025 +1100
+
+    updatet for responsive desgin
+
+[33mcommit c0c31715a5a3d1fbc238054dfee049414d7980bf[m
+Author: Dom <dominic.knabe@gmail.com>
+Date:   Sat Jan 11 21:07:57 2025 +1100
+
+    updated index html
+
+[33mcommit e7f0d38d2454d9d9a965193636eb20cf5fff1e1b[m
+Author: Dom <dominic.knabe@gmail.com>
+Date:   Sat Jan 11 19:35:22 2025 +1100
+
+    update
+
+[33mcommit 318bcfccf21e391e13b9fa8cf96e5d3fcfe7f0e2[m
+Author: Dom <dominic.knabe@gmail.com>
+Date:   Sat Jan 11 15:53:48 2025 +1100
+
+    update
