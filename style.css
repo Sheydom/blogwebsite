@@ -15,54 +15,78 @@ body {
 }
 
 #navbar{
-  justify-content: center;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   position: fixed;
   align-items: center;
   width:100%;
   background: linear-gradient(90deg, white 0% ,#7AC0CC 30%,#7AC0CC 75%, white 100%);
   z-index: 1000;
   min-height: 105px;
+  justify-content: space-between;
+}
+
+.navlinks{
+  position: absolute;
+  transform: translateX(50%);
+  right: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: clamp(0px, 2vw,50px);
+  
 }
 
 
+@media(max-width:960px){
+  .navlinks{
+    gap:10px;
+    flex-direction: row;
+    justify-content: center;
+     }
+  #last {
+   padding: 0px;
+  }
+}
+
+#last{
+  color: black;
+ margin-right: 20px;
+ position: relative;
+}
+#first{
+  margin-left: 20px;
+  position: relative;
+  
+}
 
 .logo {
   width: clamp(50px, 20vw, 150px);
   height:auto;
 }
 
-.navlinks{
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
-  list-style: none;
-  padding: 5px;
-}
-
-
-.navlinks li{
-  transition: 0.2s ease-in;
-}
-
-
-.navlinks a {
-  color: black;
-  text-decoration:none;
-  font-size: clamp(1rem, 1.5vw, 1.5rem);
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-top: 35px;
-}
-
-.shakinglogo:hover{
+.logo:hover{
   animation: shake 0.5s ease-in-out;
   animation-iteration-count: infinite;
 }
+
+.navlinks li, #last{
+  transition: 0.2s ease-in;
+}
+
+.navlinks a, #last a {
+  color: black;
+  text-decoration:none;
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
+}
+
+
+
+#last{
+  transform: scale(2);
+}
+
+
 
 @keyframes shake{
   0% {transform:translateX(0);}
@@ -73,8 +97,8 @@ body {
 
 }
 
-.insta:hover{
-  transform: scale(2);
+#last:hover{
+  transform: scale(3);
 }
 
 .links:hover{
@@ -615,11 +639,6 @@ width: 100%;
     }
 
 
-
-    .navbarp3{
-      margin-top: -100px;
-    }
-
     #sectionp3{
       background-color: rgb(227, 241, 243);
       margin-top: -5px;
@@ -670,8 +689,8 @@ width: 100%;
     
     
     .custom-shape-divider-bottom-1736068449 {
-      margin-top: 100px;
-      /* position: absolute; */
+      top: 50px;
+      position: relative;
       bottom: 0;
       left: 0;
       width: 100%;
