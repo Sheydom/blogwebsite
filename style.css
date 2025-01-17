@@ -1054,6 +1054,7 @@ width: 100%;
 #lavidaimg,#lavida2img{
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 #lavidaimg img{
@@ -1079,7 +1080,7 @@ width: 100%;
 
 @media(max-width: 960px){
   #lavidaimg img{
-    height:200px;
+    height:150px;
   }
   .lavidaflex{
     max-width: 90%;
@@ -1089,5 +1090,16 @@ width: 100%;
     padding:20px;
   }
 
+    #lavida2img img{
+      height: 120px;
+    }
+
+    #lavida3img img{
+      height: 180px;
+    }
+
+    #lavidaimg4 img{
+      height: 180px;
+    }
 
 }
